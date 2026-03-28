@@ -1,0 +1,18 @@
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Node (si tu utilises npm un jour)
+node_modules/
+npm-debug.log*
+
+# Variables d'environnement
+.env
+.env.local
