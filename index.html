@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio BTS - Présentation de mes projets et compétences">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body class="bg-dark text-white">
+    <header class="fixed top-0 w-full z-50 bg-dark/95 backdrop-blur-sm border-b border-turquoise/20">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 text-2xl font-bold text-turquoise">
+                <img class="w-8 h-8" src="pouvoir.png">
+                <span>LAURA SPY</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-turquoise">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <ul class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+                <li><a href="#hero" class="hover:text-turquoise transition">Accueil</a></li>
+                <li><a href="#about" class="hover:text-turquoise transition">À propos</a></li>
+                <li><a href="#education" class="hover:text-turquoise transition">Formations</a></li>
+                <li><a href="#experience" class="hover:text-turquoise transition">Compétences BTS SIO</a></li>
+                <li><a href="#projects" class="hover:text-turquoise transition">Projets</a></li>
+                <li><a href="#veille" class="hover:text-turquoise transition">Veille Cyber</a></li>
+                <li><a href="#contact" class="hover:text-turquoise transition">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark border-t border-turquoise/20">
+            <ul class="flex flex-col space-y-4 px-6 py-4">
+                <li><a href="#hero" class="hover:text-turquoise transition">Accueil</a></li>
+                <li><a href="#about" class="hover:text-turquoise transition">À propos</a></li>
+                <li><a href="#education" class="hover:text-turquoise transition">Formations</a></li>
+                <li><a href="#experience" class="hover:text-turquoise transition">Expérience</a></li>
+                <li><a href="#projects" class="hover:text-turquoise transition">Projets</a></li>
+                <li><a href="#veille" class="hover:text-turquoise transition">Veille Cyber</a></li>
+                <li><a href="#contact" class="hover:text-turquoise transition">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-turquoise/10 via-transparent to-transparent"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 fade-in">
+                PORTFOLIO<br>
+                <span class="text-turquoise">LAURA SPY</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8 fade-in">BTS SIO option SLAM</p>
+            <a href="#projects"
+                class="inline-flex items-center gap-2 bg-turquoise text-dark px-8 py-4 rounded-full font-semibold hover:bg-turquoise/90 transition fade-in">
+                Voir mes projets
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-turquoise" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="min-h-screen py-20 bg-turquoise text-dark">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h2 class="text-5xl font-bold mb-6">Qui suis-je ?</h2>
+                    <p class="text-lg mb-4">
+                        En septembre 2023, j'ai entrepris une reconversion professionnelle qui m'a aujourd'hui menée à
+                        l'ESNA de Bretagne,
+                        où je prépare actuellement un BTS SIO en alternance à la DIRISI à Rennes.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Auparavant, j'ai obtenu un master en production cinématographique et audiovisuelle, au cours
+                        duquel j'ai effectué deux
+                        stages dans des sociétés de production de films d'animation en volume. Malheureusement, à ma
+                        sortie d'études en septembre
+                        2019, je n'ai pas trouvé d'emploi dans mon domaine. La crise du Covid est ensuite venue stopper
+                        les tournages et, par
+                        conséquent, les recrutements. J'ai alors travaillé comme secrétaire médical pendant trois ans
+                        avant de prendre la décision
+                        de tout reprendre à zéro.
+                    </p>
+                    <p class="text-lg">
+                        J'ai souhaité reprendre des études dans l'informatique car c'était, à l'origine, mon projet au
+                        lycée. Cependant, ayant rencontré des difficultés pour obtenir mon bac en raison d'un important
+                        retard en mathématiques, j'avais perdu toute confiance en ma capacité à poursuivre des études
+                        techniques. Dix ans plus tard, cela ne me semblait plus si inatteignable et j'ai décidé de
+                        tenter ma chance en reprenant mes études.
+                    </p>
+                </div>
+                <div class="fade-in">
+                    <div class="bg-dark/10 rounded-lg p-8 h-80 flex items-center justify-center">
+                        <p class="text-center text-2xl font-light">Votre photo ici</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 fade-in">Formations & Diplômes</h2>
+            <div class="space-y-8">
+                <div
+                    class="bg-gray-800/50 p-6 rounded-lg border border-turquoise/20 fade-in hover:border-turquoise/50 transition">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-turquoise mb-2">BTS SIO option SLAM</h3>
+                            <p class="text-lg text-gray-300">ESNA Bretagne</p>
+                        </div>
+                        <span class="text-gray-400 mt-2 md:mt-0">Septembre 2024 - En cours</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Formation en alternance - Solutions Logicielles et Applications Métiers.
+                        Développement d'applications, gestion de bases de données, cybersécurité.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-800/50 p-6 rounded-lg border border-turquoise/20 fade-in hover:border-turquoise/50 transition">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-turquoise mb-2">Formation Développeur Front-End</h3>
+                            <p class="text-lg text-gray-300">SIMPLON</p>
+                        </div>
+                        <span class="text-gray-400 mt-2 md:mt-0">Juin à Août 2024 (3 mois)</span>
+                    </div>
+                    <p class="text-gray-300">
+                        HTML, CSS, JavaScript, frameworks modernes. Création d'interfaces utilisateur réactives et
+                        accessibles.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-800/50 p-6 rounded-lg border border-turquoise/20 fade-in hover:border-turquoise/50 transition">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-turquoise mb-2">Formation Développeur Full-Stack</h3>
+                            <p class="text-lg text-gray-300">Formation via CPF</p>
+                        </div>
+                        <span class="text-gray-400 mt-2 md:mt-0"> Fin novembre 2023 à début février 2024 (3 mois)</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Développement web complet : front-end, back-end, bases de données, APIs.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-800/50 p-6 rounded-lg border border-turquoise/20 fade-in hover:border-turquoise/50 transition">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-turquoise mb-2">Master Production Cinématographique et
+                                Audiovisuel</h3>
+                            <p class="text-lg text-gray-300">Université de Caen Normandie</p>
+                        </div>
+                        <span class="text-gray-400 mt-2 md:mt-0">2017 - 2019</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Gestion de projet audiovisuel et cinématographique, Recherche de financement, Organisation de
+                        tournage, Gestion d'équipe, Inscription en festival
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-white text-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 fade-in">Compétences BTS SIO</h2>
+            <div class="space-y-8">
+
+                <!-- Tableau de synthèse des réalisations professionnelles -->
+                <div class="overflow-x-auto fade-in">
+                    <table class="w-full border-collapse text-xs border border-gray-400" style="min-width: 900px;">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-400 p-2 text-center font-bold italic" rowspan="2"
+                                    style="width: 14%;">Compétences mises en œuvre</th>
+                                <th class="border border-gray-400 p-2 text-center font-bold" colspan="6">Compétences BTS
+                                    SIO</th>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-400 p-2 text-center font-bold" style="width: 14%;">
+                                    Gérer le patrimoine informatique
+                                    <ul class="font-normal text-left mt-2 space-y-1 text-gray-600">
+                                        <li>▸ Recenser et identifier les ressources numériques</li>
+                                        <li>▸ Exploiter des référentiels, normes et standards adoptés par le prestataire
+                                            informatique</li>
+                                        <li>▸ Mettre en place et vérifier les niveaux d'habilitation associés à un
+                                            service</li>
+                                        <li>▸ Vérifier les conditions de la continuité d'un service informatique</li>
+                                        <li>▸ Gérer des sauvegardes</li>
+                                        <li>▸ Vérifier le respect des règles d'utilisation des ressources numériques
+                                        </li>
+                                    </ul>
+                                </th>
+                                <th class="border border-gray-400 p-2 text-center font-bold" style="width: 14%;">
+                                    Répondre aux incidents et aux demandes d'assistance et d'évolution
+                                    <ul class="font-normal text-left mt-2 space-y-1 text-gray-600">
+                                        <li>▸ Collecter, suivre et orienter des demandes</li>
+                                        <li>▸ Traiter des demandes concernant les services réseau et système,
+                                            applicatifs</li>
+                                        <li>▸ Traiter des demandes concernant les applications</li>
+                                    </ul>
+                                </th>
+                                <th class="border border-gray-400 p-2 text-center font-bold" style="width: 14%;">
+                                    Développer la présence en ligne de l'organisation
+                                    <ul class="font-normal text-left mt-2 space-y-1 text-gray-600">
+                                        <li>▸ Participer à la valorisation de l'image de l'organisation sur les médias
+                                            numériques en tenant compte du cadre juridique et des enjeux économiques
+                                        </li>
+                                        <li>▸ Référencer les services en ligne de l'organisation et mesurer leur
+                                            visibilité</li>
+                                        <li>▸ Participer à l'évolution d'un site Web exploitant les données de
+                                            l'organisation</li>
+                                    </ul>
+                                </th>
+                                <th class="border border-gray-400 p-2 text-center font-bold" style="width: 14%;">
+                                    Travailler en mode projet
+                                    <ul class="font-normal text-left mt-2 space-y-1 text-gray-600">
+                                        <li>▸ Analyser les objectifs et les modalités d'organisation d'un projet</li>
+                                        <li>▸ Planifier les activités</li>
+                                        <li>▸ Évaluer les indicateurs de suivi d'un projet et analyser les écarts</li>
+                                    </ul>
+                                </th>
+                                <th class="border border-gray-400 p-2 text-center font-bold" style="width: 14%;">
+                                    Mettre à disposition des utilisateurs un service informatique
+                                    <ul class="font-normal text-left mt-2 space-y-1 text-gray-600">
+                                        <li>▸ Réaliser les tests d'intégration et d'acceptation d'un service</li>
+                                        <li>▸ Déployer un service</li>
+                                        <li>▸ Accompagner les utilisateurs dans la mise en place d'un service</li>
+                                    </ul>
+                                </th>
+                                <th class="border border-gray-400 p-2 text-center font-bold" style="width: 14%;">
+                                    Organiser son développement professionnel
+                                    <ul class="font-normal text-left mt-2 space-y-1 text-gray-600">
+                                        <li>▸ Mettre en place son environnement d'apprentissage personnel</li>
+                                        <li>▸ Mettre en œuvre des outils et stratégies de veille informationnelle</li>
+                                        <li>▸ Gérer son identité professionnelle</li>
+                                        <li>▸ Développer son projet professionnel</li>
+                                    </ul>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ===== Section 1 : Réalisations en cours de formation ===== -->
+                            <tr class="bg-turquoise/20">
+                                <td colspan="7"
+                                    class="border border-gray-400 px-4 py-2 text-center font-bold text-sm tracking-wide">
+                                    Réalisations en cours de formation
+                                </td>
+                            </tr>
+                            <!-- Projet 1 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Site vitrine pour une
+                                    professionnelle : D'étoffes et d'Aiguilles — <br> <a
+                                        href="https://github.com/Krystiinal/d-etoffes-et-d-aiguilles" target="_blank"
+                                        class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded text-xs font-semibold bg-turquoise/20 text-turquoise border border-turquoise/40 hover:bg-turquoise hover:text-dark transition">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                        Voir sur GitHub
+                                    </a></td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Site vitrine = valoriser image d'une
+                                    organisation</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Site déployé et accessible</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                            </tr>
+                            <!-- Projet 2 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Projet d'école (en
+                                    groupe): Projet TX — <br> <a href="https://github.com/BTS-ESNA-2024-2026/Projet-TX"
+                                        target="_blank"
+                                        class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded text-xs font-semibold bg-turquoise/20 text-turquoise border border-turquoise/40 hover:bg-turquoise hover:text-dark transition">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                        Voir sur GitHub
+                                    </a></td>
+                                <td class="border border-gray-400 p-2 align-top">~ </td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅✅ Travail Agile = cœur de cette
+                                    compétence, le projet était fait pour travailler en mode Agile</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Service mis à disposition, tests
+                                    unitaires</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                            </tr>
+                            <!-- Projet 3 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Projet d'école (solo):
+                                    MemoryPokeGame — <br> <a href="https://github.com/Krystiinal/MemoryPokeGame"
+                                        target="_blank"
+                                        class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded text-xs font-semibold bg-turquoise/20 text-turquoise border border-turquoise/40 hover:bg-turquoise hover:text-dark transition">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                        Voir sur GitHub
+                                    </a></td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Planification : maquettage, recherche
+                                    d'une identité visuelle, et développement</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Appli déployée, compte utilisateur,
+                                    tests unitaires
+                                </td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Mise en place </td>
+                            </tr>
+                            <!-- Projet 4 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Projet formation
+                                    Front-End : ScreenSaver — <br> <a href="https://github.com/Krystiinal/ScreenSaver"
+                                        target="_blank"
+                                        class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded text-xs font-semibold bg-turquoise/20 text-turquoise border border-turquoise/40 hover:bg-turquoise hover:text-dark transition">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                        Voir sur GitHub
+                                    </a></td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Appli déployée, simulation compte,
+                                    tests unitaires
+                                </td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                            </tr>
+                            <!-- Projet 5 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Projet personnel :
+                                    Application EcrisTonHistoire — <br> <a
+                                        href="https://github.com/Krystiinal/EcrisTonHistoire" target="_blank"
+                                        class="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded text-xs font-semibold bg-turquoise/20 text-turquoise border border-turquoise/40 hover:bg-turquoise hover:text-dark transition">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                                        </svg>
+                                        Voir sur GitHub
+                                    </a></td>
+                                <td class="border border-gray-400 p-2 align-top">~ </td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Projet géré seule</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ .exe distributable</td>
+                                <td class="border border-gray-400 p-2 align-top">✅✅ Dependabot = veille vulnérabilités
+                                </td>
+                            </tr>
+                            <!-- Ajouter d'autres lignes ici pour la formation -->
+
+                            <!-- ===== Section 2 : Réalisations en milieu professionnel – 1ère année ===== -->
+                            <tr class="bg-turquoise/20">
+                                <td colspan="7"
+                                    class="border border-gray-400 px-4 py-2 text-center font-bold text-sm tracking-wide">
+                                    Réalisations en milieu professionnel en cours de première année
+                                </td>
+                            </tr>
+                            <!-- Projet 1 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Backlog —</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Collecter/suivre des demandes = c'est
+                                    littéralement un backlog</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Gantt = planification</td>
+                                <td class="border border-gray-400 p-2 align-top">✅✅ Outil déployé pour l'équipe </td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                            </tr>
+                            <!-- Projet 2
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— nom du projet —</td>
+                                <td class="border border-gray-400 p-2 align-top"></td>
+                                <td class="border border-gray-400 p-2 align-top"></td>
+                                <td class="border border-gray-400 p-2 align-top"></td>
+                                <td class="border border-gray-400 p-2 align-top"></td>
+                                <td class="border border-gray-400 p-2 align-top"></td>
+                                <td class="border border-gray-400 p-2 align-top"></td>
+                            </tr> -->
+                            <!-- Ajouter d'autres lignes ici pour la 1ère année -->
+
+                            <!-- ===== Section 3 : Réalisations en milieu professionnel – 2ème année ===== -->
+                            <tr class="bg-turquoise/20">
+                                <td colspan="7"
+                                    class="border border-gray-400 px-4 py-2 text-center font-bold text-sm tracking-wide">
+                                    Réalisations en milieu professionnel en cours de seconde année
+                                </td>
+                            </tr>
+                            <!-- Projet 1 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Remplacement Client
+                                    Serveur SCCM 2007 —</td>
+                                <td class="border border-gray-400 p-2 align-top">✅✅ Surveiller/gérer processus et
+                                    services Windows</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Traiter demandes services système
+                                </td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Nouveau service déployé</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                            </tr>
+                            <!-- Projet 2 -->
+                            <tr>
+                                <td class="border border-gray-400 p-2 align-top font-medium">— Projet Masterisation
+                                    (intégration à l'application générale) —</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Gestion parc en masse (déploiement
+                                    OS)</td>
+                                <td class="border border-gray-400 p-2 align-top">✅✅ Correction bugs applicatifs</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Intégration équipe projet</td>
+                                <td class="border border-gray-400 p-2 align-top">✅ Service mis à dispo clients</td>
+                                <td class="border border-gray-400 p-2 align-top">~</td>
+                            </tr>
+                            <!-- Ajouter d'autres lignes ici pour la 2ème année -->
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12 fade-in">Visiter les projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+                <div class="project-card bg-gray-800 rounded-lg h-80 fade-in overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="./images/d-etoffes-et-d-aiguilles.png"
+                        alt="capture écran du site">
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <p class="text-white text-sm mb-4">Proet personnel - Site web vitrine pour une couturière
+                            professionnelle -
+                            février 2025</p>
+                        <a href="https://d-etoffes-et-d-aiguilles.fr/"
+                            class="bg-turquoise text-dark px-4 py-2 rounded-full text-sm font-semibold hover:bg-turquoise/90 transition"
+                            target="_blank">
+                            Voir le site
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg h-80 fade-in overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="./images/memorypokegame.png"
+                        alt="capture écran du projet MemoryPokeGame">
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <p class="text-white text-sm mb-4">Projet d'école - Jeu de Memory Game (avec PokeAPI) -
+                            septembre 2025</p>
+                        <a href="https://github.com/Krystiinal/MemoryPokeGame"
+                            class="bg-turquoise text-dark px-4 py-2 rounded-full text-sm font-semibold hover:bg-turquoise/90 transition"
+                            target="_blank">
+                            Voir le site
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg h-80 fade-in overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="./images/screensaver.png"
+                        alt="capture écran du projet MemoryPokeGame">
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <p class="text-white text-sm mb-4">Projet SIMPLON - Plateforme de suivi Films/Séries -
+                            septembre 2024</p>
+                        <a href="https://github.com/Krystiinal/ScreenSaver"
+                            class="bg-turquoise text-dark px-4 py-2 rounded-full text-sm font-semibold hover:bg-turquoise/90 transition"
+                            target="_blank">
+                            Voir le site
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg h-80 fade-in overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="./images/backlog-image.png"
+                        alt="capture écran du projet entreprise Backlog">
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <p class="text-white text-sm mb-4">Projet Entreprise - Backlog -
+                            février 2025 à juillet 2025</p>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg h-80 fade-in overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="./images/projet gestion services.png"
+                        alt="capture écran du projet SCCM">
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <p class="text-white text-sm mb-4">Projet Entreprise - Remplacement client SCCM 2007 -
+                            septembre 2025 à octobre 2025</p>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg h-80 fade-in overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="./images/projet-tx.png"
+                        alt="capture écran du projet TX">
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <p class="text-white text-sm mb-4">Projet d'école - Projet TX -
+                            juin 2025 à septembre 2025</p>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg h-80 fade-in overflow-hidden relative group">
+                    <img class="w-full h-full object-cover" src="./images/ecristonhistoire.png"
+                        alt="capture écran du projet EcrisTonHistoire">
+                    <div
+                        class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-center">
+                        <p class="text-white text-sm mb-4">Projet personnel - EcrisTonHistoire -
+                            février 2026 à aujourd'hui</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="veille" class="py-20 bg-white text-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-4 fade-in">Veille Cybersécurité</h2>
+            <p class="text-lg text-gray-600 mb-12 fade-in">Restez informé des dernières actualités et menaces en
+                cybersécurité</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-turquoise/10 p-6 rounded-lg border border-turquoise/30 fade-in hover:border-turquoise hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <span
+                            class="bg-turquoise text-dark text-xs font-semibold px-3 py-1 rounded-full">VULNÉRABILITÉ</span>
+                        <span class="text-sm text-gray-500">Date</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Titre de l'article</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description brève de l'actualité cybersécurité, des vulnérabilités découvertes, ou des nouvelles
+                        menaces...
+                    </p>
+                    <a href="#" class="text-turquoise font-semibold hover:underline inline-flex items-center gap-2">
+                        Lire plus
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-turquoise/10 p-6 rounded-lg border border-turquoise/30 fade-in hover:border-turquoise hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <span class="bg-turquoise text-dark text-xs font-semibold px-3 py-1 rounded-full">ATTAQUE</span>
+                        <span class="text-sm text-gray-500">Date</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Titre de l'article</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description brève de l'actualité cybersécurité, des attaques récentes, ou des tendances du
+                        secteur...
+                    </p>
+                    <a href="#" class="text-turquoise font-semibold hover:underline inline-flex items-center gap-2">
+                        Lire plus
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-turquoise/10 p-6 rounded-lg border border-turquoise/30 fade-in hover:border-turquoise hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <span class="bg-turquoise text-dark text-xs font-semibold px-3 py-1 rounded-full">PATCH</span>
+                        <span class="text-sm text-gray-500">Date</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Titre de l'article</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description brève des mises à jour de sécurité, correctifs importants, ou recommandations...
+                    </p>
+                    <a href="#" class="text-turquoise font-semibold hover:underline inline-flex items-center gap-2">
+                        Lire plus
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-turquoise/10 p-6 rounded-lg border border-turquoise/30 fade-in hover:border-turquoise hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <span
+                            class="bg-turquoise text-dark text-xs font-semibold px-3 py-1 rounded-full">TENDANCE</span>
+                        <span class="text-sm text-gray-500">Date</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Titre de l'article</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description brève des tendances émergentes en cybersécurité, nouvelles technologies de
+                        protection...
+                    </p>
+                    <a href="#" class="text-turquoise font-semibold hover:underline inline-flex items-center gap-2">
+                        Lire plus
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-turquoise/10 p-6 rounded-lg border border-turquoise/30 fade-in hover:border-turquoise hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <span
+                            class="bg-turquoise text-dark text-xs font-semibold px-3 py-1 rounded-full">RÉGLEMENTATION</span>
+                        <span class="text-sm text-gray-500">Date</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Titre de l'article</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description brève des nouvelles réglementations, conformité RGPD, normes de sécurité...
+                    </p>
+                    <a href="#" class="text-turquoise font-semibold hover:underline inline-flex items-center gap-2">
+                        Lire plus
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-turquoise/10 p-6 rounded-lg border border-turquoise/30 fade-in hover:border-turquoise hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <span class="bg-turquoise text-dark text-xs font-semibold px-3 py-1 rounded-full">OUTIL</span>
+                        <span class="text-sm text-gray-500">Date</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Titre de l'article</h3>
+                    <p class="text-gray-700 mb-4">
+                        Description brève des nouveaux outils de sécurité, frameworks, bonnes pratiques en développement
+                        sécurisé...
+                    </p>
+                    <a href="#" class="text-turquoise font-semibold hover:underline inline-flex items-center gap-2">
+                        Lire plus
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack-tech" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-4 fade-in">Stack Technique</h2>
+            <p class="text-lg text-gray-400 mb-12 fade-in">Récapitulatif des technologies utilisées dans mes projets</p>
+
+            <div class="overflow-x-auto fade-in">
+                <table class="w-full border-collapse bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <thead>
+                        <tr class="bg-turquoise text-dark">
+                            <th class="px-6 py-4 text-left font-bold">Projet</th>
+                            <th class="px-6 py-4 text-left font-bold">Date</th>
+                            <th class="px-6 py-4 text-left font-bold">Technologies Front-End</th>
+                            <th class="px-6 py-4 text-left font-bold">Technologies Back-End</th>
+                            <th class="px-6 py-4 text-left font-bold">Base de données</th>
+                            <th class="px-6 py-4 text-left font-bold">Outils & Autres</th>
+                            <th class="px-6 py-4 text-left font-bold">Travail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-turquoise/20 hover:bg-turquoise/5 transition">
+                            <td class="px-6 py-4 font-semibold">D'Étoffes et d'Aiguilles</td>
+                            <td class="px-6 py-4 text-gray-400">Février 2025</td>
+                            <td class="px-6 py-4">
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">CSS</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">JavaScript</span>
+                            </td>
+                            <td class="px-6 py-4 text-gray-400">PHP</td>
+                            <td class="px-6 py-4 text-gray-400">-</td>
+                            <td class="px-6 py-4 text-gray-400">Git, GitHub</td>
+                            <td class="px-6 py-4 text-gray-400">Solo</td>
+                        </tr>
+
+                        <tr class="border-b border-turquoise/20 hover:bg-turquoise/5 transition">
+                            <td class="px-6 py-4 font-semibold">Backlog (Entreprise)</td>
+                            <td class="px-6 py-4 text-gray-400">Février - Juillet 2025</td>
+                            <td class="px-6 py-4 text-gray-400">
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">Bootstrap/CSS</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">JQuery</span>
+                            </td>
+                            <td class="px-6 py-4 text-gray-400">Symfony</td>
+                            <td class="px-6 py-4 text-gray-400">?</td>
+                            <td class="px-6 py-4 text-gray-400">GitLab</td>
+                            <td class="px-6 py-4 text-gray-400">Groupe</td>
+                        </tr>
+
+                        <tr class="hover:bg-turquoise/5 transition">
+                            <td class="px-6 py-4 font-semibold">Remplacement SCCM 2007 (Projet entreprise)</td>
+                            <td class="px-6 py-4 text-gray-400">Sept - Oct 2025</td>
+                            <td class="px-6 py-4 text-gray-400">
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">Bootstrap/CSS</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">JQuery</span>
+                            </td>
+                            <td class="px-6 py-4 text-gray-400">Symfony</td>
+                            <td class="px-6 py-4 text-gray-400">?</td>
+                            <td class="px-6 py-4 text-gray-400">Gitlab</td>
+                            <td class="px-6 py-4 text-gray-400">Groupe</td>
+                        </tr>
+
+                        <tr class="border-b border-turquoise/20 hover:bg-turquoise/5 transition">
+                            <td class="px-6 py-4 font-semibold">MemoryPokeGame</td>
+                            <td class="px-6 py-4 text-gray-400">Septembre 2025</td>
+                            <td class="px-6 py-4">
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">NextJS</span>
+                            </td>
+                            <td class="px-6 py-4 text-gray-400">API PokeAPI</td>
+                            <td class="px-6 py-4 text-gray-400">-</td>
+                            <td class="px-6 py-4 text-gray-400">Git, GitHub</td>
+                            <td class="px-6 py-4 text-gray-400">Solo</td>
+                        </tr>
+
+                        <tr class="border-b border-turquoise/20 hover:bg-turquoise/5 transition">
+                            <td class="px-6 py-4 font-semibold">ScreenSaver</td>
+                            <td class="px-6 py-4 text-gray-400">Septembre 2024</td>
+                            <td class="px-6 py-4">
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">CSS</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">React.js</span>
+                            </td>
+                            <td class="px-6 py-4 text-gray-400">Node.js, Express</td>
+                            <td class="px-6 py-4">
+                                <span>-</span>
+                            </td>
+                            <td class="px-6 py-4 text-gray-400">Git, GitHub</td>
+                            <td class="px-6 py-4 text-gray-400">Solo</td>
+                        </tr>
+
+                        <tr class="border-b border-turquoise/20 hover:bg-turquoise/5 transition">
+                            <td class="px-6 py-4 font-semibold">Projet TX</td>
+                            <td class="px-6 py-4 text-gray-400">Juin 2025 à Septembre 2025</td>
+                            <td class="px-6 py-4">
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">HTML</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">CSS</span>
+                                <span
+                                    class="inline-block bg-turquoise/20 text-dark px-2 py-1 rounded text-sm mr-2 mb-2">Next.JS</span>
+                            </td>
+                            <td class="px-6 py-4 text-gray-400">-</td>
+                            <td class="px-6 py-4 text-gray-400">-</td>
+                            <td class="px-6 py-4 text-gray-400">Git, GitHub</td>
+                            <td class="px-6 py-4 text-gray-400">Groupe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white text-dark">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-8 fade-in">portfolio</h2>
+            <p class="text-xl text-gray-600 mb-12 fade-in">...</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark border-t border-turquoise/20 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Portfolio. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-turquoise transition">LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-turquoise transition">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
