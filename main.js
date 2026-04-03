@@ -53,6 +53,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Transition entre les tableaux Stack Technique
+    window.switchProject = function(project) {
+        const tables = document.querySelectorAll('.stack-table');
+        const buttons = document.querySelectorAll('.stack-tab');
+
+        // Fade out toutes les tables
+        tables.forEach(t => {
+            t.style.opacity = '0';
+            t.style.transform = 'translateY(10px)';
+        });
+
+        setTimeout(() => {
+            tables.forEach(t => t.classList.add('hidden'));
+
+            const target = document.getElementById('table-' + project);
+            if (target) {
+                target.classList.remove('hidden');
+                requestAnimationFrame(() => {
+                    target.style.opacity = '1';
+                    target.style.transform = 'translateY(0)';
+                });
+            }
+        }, 200);
+
+        // Mise à jour des boutons
+        buttons.forEach(btn => {
+            btn.classList.remove('bg-turquoise', 'text-dark');
+            btn.classList.add('text-turquoise', 'bg-transparent');
+        });
+        const activeBtn = document.getElementById('btn-' + project);
+        if (activeBtn) {
+            activeBtn.classList.remove('text-turquoise', 'bg-transparent');
+            activeBtn.classList.add('bg-turquoise', 'text-dark');
+        }
+    };
+
+    // Init transition style sur les tables
+    document.querySelectorAll('.stack-table').forEach(t => {
+        t.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        t.style.opacity = '1';
+        t.style.transform = 'translateY(0)';
+    });
+
+
     // Highlight active section dans la navigation
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
